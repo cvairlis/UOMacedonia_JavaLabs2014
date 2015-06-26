@@ -14,8 +14,8 @@ Java code is full of comments and JavaDocs.
 
 
 MAIN was given like this and we had to implement classes and methods for User and Group.
-	----------main start--------
 
+	----------main start--------
 	User u1 = new User("Teo","teo@uom.gr");
 	User u2 = new User("Makis","makis@uom.gr");
 	User u3 = new User("Petros","petros@uom.gr");
@@ -53,7 +53,6 @@ MAIN was given like this and we had to implement classes and methods for User an
 
 	u1.PrintJoinedGroups();
 	g1.PrintGroupMembers();
-
 	----------main end--------
 
 
