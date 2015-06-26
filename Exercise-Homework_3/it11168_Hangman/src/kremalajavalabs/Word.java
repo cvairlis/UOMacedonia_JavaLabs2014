@@ -15,20 +15,13 @@ import java.util.Random;
  * @author CHARALAMPOS VAIRLIS
  *
  */
-public class Word {
-	
-	private int					randomInt;
-	
-	private List<String> 		words;
-	
-	private Random 				rand;
-	
-	private String				word;
-	
-	String DICTIONARY_FILE = 	"wikipedia.txt";
-	
-	MyFileReader fr 	   =   	new MyFileReader(DICTIONARY_FILE);;
-  
+public class Word {	
+	private int randomInt;	
+	private List<String> words;	
+	private Random rand;	
+	private String word;	
+	String DICTIONARY_FILE = "wikipedia.txt";	
+	MyFileReader fr = new MyFileReader(DICTIONARY_FILE);; 
 	
 	public Word(){
 		rand = new Random();

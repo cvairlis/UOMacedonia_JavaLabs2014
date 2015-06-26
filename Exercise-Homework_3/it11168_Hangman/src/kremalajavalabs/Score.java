@@ -13,17 +13,13 @@ import java.io.Serializable;
  * @author CHARALAMPOS VAIRLIS
  *
  */
-public class Score implements Serializable {
-	
-	
-	private static final long serialVersionUID = 1L;
-	
+public class Score implements Serializable {	
+	private static final long serialVersionUID = 1L;	
 	private int playerScore;
 	private int computerScore;
 	StringBuilder ScoreBuilder;
 	String ScoreText;
-	
-	
+		
 	public Score(int playerScore, int computerScore) {
 		super();
 		this.playerScore = playerScore;

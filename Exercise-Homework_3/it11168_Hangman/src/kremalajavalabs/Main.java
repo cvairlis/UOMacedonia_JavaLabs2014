@@ -64,33 +64,32 @@ public class Main {
         //Schedule a job for the event dispatch thread:
         //creating and showing this application's GUI.
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                CreateTopLevelFrame();
-            }
-
-			private void CreateTopLevelFrame() {
-				
-				JFrame frame = new JFrame("йяелака");
-		        frame.setSize(1200, 250);
-		      	       
-		        HangmanGUI hangApp = new HangmanGUI();
+		public void run() {
+			CreateTopLevelFrame();
+        	}
+		
+		private void CreateTopLevelFrame() {				
+		JFrame frame = new JFrame("йяелака");
+		frame.setSize(1200, 250);
+	     	       
+		HangmanGUI hangApp = new HangmanGUI();
 		        
-		        Component contents = hangApp.createComponents();
+      		Component contents = hangApp.createComponents();
 
-		        frame.getContentPane().add(contents);
+       		frame.getContentPane().add(contents);
 
-		        //Finish setting up the frame, and show it.
-		        frame.addWindowListener(new WindowAdapter() {
-		            public void windowClosing(WindowEvent e) {
-		            	hangApp.saveGame();
-		                System.exit(0);
-		            }
-		        });
-		        // frame.pack() causes problems here so we don't use it
+       		//Finish setting up the frame, and show it.
+       		frame.addWindowListener(new WindowAdapter() {
+       			public void windowClosing(WindowEvent e) {
+				hangApp.saveGame();
+               			System.exit(0);
+      			}
+       		});
+		// frame.pack() causes problems here so we don't use it
 		        
-		        frame.setVisible(true);
-		        //frame.setResizable(false); optional
-			}
+		frame.setVisible(true);
+		//frame.setResizable(false); optional
+		}
         });
     }
 	

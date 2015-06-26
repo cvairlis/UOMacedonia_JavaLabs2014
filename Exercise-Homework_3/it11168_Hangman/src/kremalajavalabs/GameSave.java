@@ -19,18 +19,15 @@ import java.io.ObjectOutputStream;
  *
  */
 public class GameSave {
-
 	Score serialScore;
 	Score score;
 	
 	public GameSave() {
 		if (!saveFileExists()){
 			save(new Score(0, 0), "score.ser");
-		}
-		
+		}	
 	}
-	
-	
+		
 	/**
 	 * This method loads the score of the game.
 	 * 
@@ -85,9 +82,5 @@ public class GameSave {
 	public boolean saveFileExists(){
 		File f = new File("score.ser");
 		return f.exists();
-	}
-	
-	
-	
-	
+	}	
 }

@@ -11,11 +11,9 @@ package kremalajavalabs;
  * @author CHARALAMPOS VAIRLIS
  *
  */
-public class Level {
-	
+public class Level {	
 	private int selectedLevel;
 	private int misses;
-
 	
 	public Level (int selectedLevel) {
 		this.selectedLevel = selectedLevel;
@@ -35,5 +33,4 @@ public class Level {
 	public int getMisses() {
 		return misses;
 	}
-
 }

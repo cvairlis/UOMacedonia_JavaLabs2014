@@ -14,80 +14,79 @@ import java.awt.event.*;
  */
 
 
-public class HangmanGUI {
-	
+public class HangmanGUI {	
 	/*
 	 * GUI Variables area	
 	 */
 	
-    /* Buttons */
-    JButton resetButton		= null;
-    JButton exitButton   	= null;
-    JButton newGameButton 	= null;
-    JButton confirmReset	= null;
+    	/* Buttons */
+    	JButton resetButton		= null;
+	JButton exitButton   	= null;
+    	JButton newGameButton 	= null;
+    	JButton confirmReset	= null;
     
-    JRadioButton easy		= null;
-    JRadioButton medium		= null;
-    JRadioButton hard		= null;
+    	JRadioButton easy		= null;
+    	JRadioButton medium		= null;
+    	JRadioButton hard		= null;
     
-    ButtonGroup level;
+    	ButtonGroup level;
     
-    /* Labels */
-    JLabel SelectLevel 		= null;
+    	/* Labels */
+    	JLabel SelectLevel 		= null;
 
-    JLabel wordArea    		= null;
-    JLabel wordToGuessArea	= null;
-    JLabel messageArea 		= null;
-    JLabel currentScore		= null;
+    	JLabel wordArea    		= null;
+    	JLabel wordToGuessArea	= null;
+    	JLabel messageArea 		= null;
+    	JLabel currentScore		= null;
     
-    JTextPane scoreText		= null;
+    	JTextPane scoreText		= null;
     
-    JLabel wrongCharacterGuessesArea		= null;
+    	JLabel wrongCharacterGuessesArea		= null;
     
-    java.util.List<JButton> alphaButtonList = new ArrayList<JButton>();
+    	java.util.List<JButton> alphaButtonList = new ArrayList<JButton>();
     
-    Iterator<JButton> alphaIterator 	= null;
+    	Iterator<JButton> alphaIterator 	= null;
 
-    /* Enable - disable for true or false Show buttons - hide buttons */ 
-    boolean enable			= true;
-    boolean disable      	= false;
+    	/* Enable - disable for true or false Show buttons - hide buttons */ 
+    	boolean enable			= true;
+    	boolean disable      	= false;
     
-    /*
+    	/*
 	 * Game Variables area	
 	 */
         
-    /* Objects */
-    Word guessWords = new Word();
-    GameSave gameSerialized;
-    Score newScore;
+    	/* Objects */
+    	Word guessWords = new Word();
+    	GameSave gameSerialized;
+    	Score newScore;
     
-    String wrong = "";
-    String maskedWord;
-    String targetWord;
+    	String wrong = "";
+    	String maskedWord;
+    	String targetWord;
 
-    int tempWrong;
-    int numberOfWrongAnswers 	= 8;
-    int next              		= 0;
+    	int tempWrong;
+    	int numberOfWrongAnswers 	= 8;
+    	int next              		= 0;
     
     
-    /**
-     * Hangman Constructor
-     * It loads the score and createComponents.
-     */
-    public HangmanGUI(){
-    	gameSerialized = new GameSave();
-    	newScore = gameSerialized.load("score.ser");
-    	createComponents();
-    }
+    	/**
+	 * Hangman Constructor
+     	 * It loads the score and createComponents.
+     	 */
+    	public HangmanGUI(){
+    		gameSerialized = new GameSave();
+    		newScore = gameSerialized.load("score.ser");
+    		createComponents();
+    	}
     
-    /**
-     * This method saves the game. 
-     */
-    public void saveGame(){
-    	gameSerialized.save(newScore, "score.ser");
-    }
+    	/**
+         * This method saves the game. 
+         */
+    	public void saveGame(){
+    		gameSerialized.save(newScore, "score.ser");
+    	}
     
-    /**
+    	/**
 	 * Create the components for the game GUI.
 	 * The returned JPanel will have all the elements of the GUI
 	 * arranged in a BorderLayout.
@@ -104,8 +103,8 @@ public class HangmanGUI {
 		pane.add(createEastPane(), BorderLayout.EAST);
 		pane.add(createCenterPane(), BorderLayout.CENTER);
 		pane.add(createNorthPane(), BorderLayout.NORTH);
-        return pane;
- 	 }
+        	return pane;
+ 	}
 	
 	
 	/**
@@ -115,9 +114,8 @@ public class HangmanGUI {
 	 * 
 	 * @return JPanel with control buttons set in a BoxLayout
 	 */
-	public Component createNorthPane() {
-		
-        ActionListener controlButtonListener = new ActionListener() {
+	public Component createNorthPane() {		
+        	ActionListener controlButtonListener = new ActionListener() {
         	@Override
         	public void actionPerformed( ActionEvent e ) {
                 JButton buttonPushed = (JButton)e.getSource();
@@ -144,8 +142,8 @@ public class HangmanGUI {
             }
         };
         
-        ActionListener levelButtonListener = new ActionListener() {
-			@Override
+        
+	ActionListener levelButtonListener = new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				JRadioButton levelButtonPushed = (JRadioButton)ev.getSource();
 				// level buttons act as a common button
@@ -168,7 +166,7 @@ public class HangmanGUI {
         pane.setLayout(new BoxLayout(pane,BoxLayout.X_AXIS));
         
         // BUttons FONT
-        Font foPlain = new Font("Verdana", Font.PLAIN, 22);
+	Font foPlain = new Font("Verdana", Font.PLAIN, 22);
         Font foBold = new Font("Verdana", Font.BOLD, 22);
 
         SelectLevel = new JLabel("Διάλεξε επίπεδο: ");
@@ -220,7 +218,7 @@ public class HangmanGUI {
         resetButton.setEnabled(disable);
         
         return pane;
-    } 
+    	} 
 	
 
 	/**

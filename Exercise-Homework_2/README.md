@@ -5,7 +5,7 @@ Except the old two basic classes (User, Group) where some methods added, there a
 The other new class is called Post.
 
 Second exercise:
-Porst obect are been created within User Class Method
+Post objects are been created within User Class Method
 Extended relationship between classes,
 Collections used: ArrayList<customObject>,
 YES Inheritance, NO Polymorphism,

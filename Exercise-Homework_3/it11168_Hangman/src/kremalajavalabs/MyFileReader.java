@@ -12,12 +12,9 @@ import java.util.*;
  * @author CHARALAMPOS VAIRLIS
  *
  */
-public class MyFileReader {
-	
-	
+public class MyFileReader {	
 	ArrayList<String> words = new ArrayList<String>();
 	private String theWord;
-	
 	
 	public MyFileReader (String string){
 	}
@@ -33,16 +30,13 @@ public class MyFileReader {
 	public List<String> get_words (String file){
 		
 		final int MIN_WORD_LENGTH = 4;
-		Scanner wordScan = null;
-		
-		
+		Scanner wordScan = null;	
 		try{
 			wordScan = new Scanner(new File(file));
 		} catch (FileNotFoundException e) {
 			System.err.println(e);
 			System.exit(1);
-		}
-		
+		}		
 		while (wordScan.hasNext()){
 			
 			String nextWord = wordScan.next();
@@ -87,6 +81,5 @@ public class MyFileReader {
 		cleanWord = Normalizer.normalize(cleanWord, Form.NFD);	
 		cleanWord = cleanWord.replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 		return cleanWord;
-	}
-	
+	}	
 }
