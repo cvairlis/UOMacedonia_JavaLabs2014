@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		User u1 = new User("Teo","chaikalis@uom.gr");
+		User u1 = new User("Teo","teo@uom.gr");
 		User u2 = new User("Makis","makis@uom.gr");
 		User u3 = new User("Petros","petros@uom.gr");
 		User u4 = new User("Stefania","stefania@uom.gr");
