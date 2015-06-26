@@ -2,8 +2,7 @@ package it11168_MouriBook;
 
 import java.util.*;
 
-public class Group {
-	
+public class Group {	
 	/* A MouriBook Group has a name and a description.
 	 * Every group has also a list with members.
 	 */

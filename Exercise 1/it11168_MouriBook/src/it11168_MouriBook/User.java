@@ -7,8 +7,7 @@ public class User {
 	/* A MouriBook User has a name and an e-mail.
 	 * Users have a list with friends and one more list 
 	 * for Groups that they enroll.
-	 */
-	
+	 */	
 	private String name;
 	private String mail;
 	private ArrayList<User> hasFriends;
@@ -32,8 +31,6 @@ public class User {
 		joinedGroups = new ArrayList<Group>();
 		commonFriends = new ArrayList<String>();
 	}
-
-	
 
 	/*
 	 * Getters & Setters.

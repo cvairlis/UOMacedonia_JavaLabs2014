@@ -1,10 +1,7 @@
 package it11168_MouriBook;
 
-
 public class Main {
-
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		User u1 = new User("Teo","teo@uom.gr");
 		User u2 = new User("Makis","makis@uom.gr");
 		User u3 = new User("Petros","petros@uom.gr");
@@ -14,8 +11,7 @@ public class Main {
 		
 		Group g1 = new Group("Efarmosmeni","Ena group gia kammenous");
 		Group g2 = new Group("Oikonomikwn Epistimon","Ena group gia giapides");
-		
-						
+								
 		u1.AddFriend(u2);
 		u2.AddFriend(u3);
 		u1.AddFriend(u3);
