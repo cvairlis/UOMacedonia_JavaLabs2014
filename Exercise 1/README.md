@@ -1,6 +1,6 @@
 # UOMacedonia_JavaLabs2014
 
-"Mouribook" is the first program we developed and simulates a small social media.
+"Mouribook" was the first program we developed and simulates a small social media.
 It consists of 3 classes User, Group and Main.
 
 First exercise:
