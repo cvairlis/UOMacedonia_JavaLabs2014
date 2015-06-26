@@ -3,8 +3,7 @@ package it11168_MouriBook_Extended;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class PrivateGroup extends Group{
-	
+public class PrivateGroup extends Group{	
 	private String name;
 	private String description;
 	private ArrayList<User> Members;

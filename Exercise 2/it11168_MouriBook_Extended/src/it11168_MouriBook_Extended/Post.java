@@ -4,8 +4,7 @@ package it11168_MouriBook_Extended;
 import java.util.Date;
 
 
-public class Post {
-	
+public class Post {	
 	private Date timestamp;
 	private String post;
 	private User user;

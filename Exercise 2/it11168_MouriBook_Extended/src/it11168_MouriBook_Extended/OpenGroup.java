@@ -3,7 +3,7 @@ package it11168_MouriBook_Extended;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class OpenGroup extends Group{
+public class OpenGroup extends Group {
 	
 	private ArrayList<User> Members;
 	private LinkedList<Post> Posts;

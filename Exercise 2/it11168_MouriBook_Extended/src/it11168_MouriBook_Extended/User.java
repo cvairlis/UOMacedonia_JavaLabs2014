@@ -214,7 +214,6 @@ public class User {
 	}
 	
 	
-	
 
 	public Post CreatePost(String str) {
 		Timestamp stamp = new Timestamp(System.currentTimeMillis());
