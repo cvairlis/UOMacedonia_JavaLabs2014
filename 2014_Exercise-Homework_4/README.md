@@ -39,4 +39,6 @@ Implements Serialization
 Java code is full of comments and JavaDocs.
 Exercise pronunciation is included in Greek.
 Some screenshots are included.
+Full java code explanation (in Greek) at the following link:
+http://greekitedu.blogspot.gr/2015/03/uom-java-ex4-election-simulator-photos.html
 
